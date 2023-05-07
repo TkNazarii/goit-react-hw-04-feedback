@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './button.module.scss';
 
 const FeedbackOptions = ({ addValue, BtnName }) => {
@@ -13,4 +14,11 @@ const FeedbackOptions = ({ addValue, BtnName }) => {
   );
 };
 
+FeedbackOptions.propTypes = {
+	addValue: PropTypes.func.isRequired,
+	BtnName: PropTypes.string.isRequired,
+  };
+
 export default FeedbackOptions;
+
+
